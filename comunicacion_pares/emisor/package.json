@@ -1,0 +1,23 @@
+{
+  "name": "productor",
+  "version": "1.0.0",
+  "description": "Ejemplo de productor",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AdP - UBA",
+  "license": "ISC",
+  "dependencies": {
+    "rhea": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "concurrently": "^8.0.1",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  }
+}
